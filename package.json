@@ -3,8 +3,8 @@
   "displayName": "luau-starlit",
   "description": "Starlit-Studios Luau Theme for VSCode. This theme is designed to be used with the Luau programming language and is geared towards better readability for complex scripts.",
   "publisher": "starlit-studios",
-  "version": "0.0.1",
-  "icon": "/assets/icon128.png",
+  "version": "0.0.4",
+  "icon": "assets/icon128.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/auro67/luaux.git"
