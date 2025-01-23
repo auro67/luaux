@@ -121,43 +121,98 @@
 			}
 		},
 		{
-			"scope": "comment",
+			"name": "Critical Comments",
+			"scope": "comment.line.critical.lua",
 			"settings": {
-				"foreground": "#5e5e5e"
+				"foreground": "#CC666680" // Muted red with 50% transparency
 			}
 		},
 		{
-			"scope": "keyword.control.exit.lua",
+			"name": "Bold Critical Comments",
+			"scope": "comment.line.critical.bold.lua",
 			"settings": {
-				"foreground": "#c97d31"
+				"foreground": "#CC6666CC", // Muted red with 80% transparency
+				"fontStyle": "bold"
 			}
 		},
 		{
-			"scope": "variable.other.constant.lua",
+			"name": "Warning Comments",
+			"scope": "comment.line.warning.lua",
 			"settings": {
-				"foreground": "#2723ff"
+				"foreground": "#C4C97780" // Muted yellow with 50% transparency
 			}
 		},
 		{
-			"scope": "string.quoted.double",
+			"name": "Bold Warning Comments",
+			"scope": "comment.line.warning.bold.lua",
 			"settings": {
-				"foreground": "#9fff9c"
+				"foreground": "#C4C977CC", // Muted yellow with 80% transparency
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Note Comments",
+			"scope": "comment.line.note.lua",
+			"settings": {
+				"foreground": "#8EC07C80" // Muted green with 50% transparency
+			}
+		},
+		{
+			"name": "Bold Note Comments",
+			"scope": "comment.line.note.bold.lua",
+			"settings": {
+				"foreground": "#8EC07CCC", // Muted green with 80% transparency
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "TODO Tag",
+			"scope": "comment.line.tagged.todo.lua",
+			"settings": {
+				"foreground": "#FFFF0080", // Yellow with 50% transparency
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "FIXME Tag",
+			"scope": "comment.line.tagged.fixme.lua",
+			"settings": {
+				"foreground": "#FFA50080", // Orange with 50% transparency
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "NOTE Tag",
+			"scope": "comment.line.tagged.note.lua",
+			"settings": {
+				"foreground": "#FFFFFF80", // White with 50% transparency
+				"fontStyle": "bold"
+			}
+		},
+		{
+			"name": "Tagged Comment Suffix",
+			"scope": "comment.line.suffix.lua",
+			"settings": {
+				"foreground": "#FF8C0080" // Darker orange with 50% transparency
+			}
+		},
+		{
+			"name": "Standard Comments",
+			"scope": "comment.line.double-dash.lua",
+			"settings": {
+				"foreground": "#7C7C7C80" // Gray with 50% transparency
+			}
+		},
+		{
+			"name": "Block Comments",
+			"scope": "comment.block.lua",
+			"settings": {
+				"foreground": "#7C7C7C80" // Same gray with 50% transparency
 			}
 		},
 		{
 			"settings": {
 				"foreground": "#bbbbbbff",
-			}
-		},
-		{
-			"name": "Comment",
-			"scope": [
-				"comment",
-				"string.comment"
-			],
-			"settings": {
-				"foreground": "#5c6370",
-				"fontStyle": "italic"
 			}
 		},
 		{

@@ -71,8 +71,8 @@
 					"include": "#type_literal"
 				},
 				{
-                    "include": "#hover"
-                }
+					"include": "#hover"
+				}
 			],
 			"contentName": "meta.parameters.lua",
 			"name": "meta.function.lua"
@@ -232,7 +232,6 @@
 				}
 			]
 		},
-
 		"keywords": {
 			"patterns": [
 				{
@@ -319,7 +318,9 @@
 					"begin": "\"",
 					"end": "\"",
 					"patterns": [
-						{"include": "#string_escape"}
+						{
+							"include": "#string_escape"
+						}
 					],
 					"name": "string.quoted.double.lua"
 				},
@@ -327,7 +328,9 @@
 					"begin": "'",
 					"end": "'",
 					"patterns": [
-						{"include": "#string_escape"}
+						{
+							"include": "#string_escape"
+						}
 					],
 					"name": "string.quoted.single.lua"
 				},
@@ -457,7 +460,7 @@
 					}
 				},
 				{
-					"match":"\\b(self)\\b",
+					"match": "\\b(self)\\b",
 					"name": "variable.language.self.lua"
 				},
 				{
@@ -470,41 +473,58 @@
 			"patterns": [
 				{
 					"begin": "--\\[(=*)\\[",
-					"end": "\\]\\1\\]",
-					"name": "comment.block.lua",
-					"patterns": [
-						{
-							"begin": "(```lua)\\s+",
-							"beginCaptures": {
-								"1": {
-									"name": "comment.lua"
-								}
-							},
-							"end": "(```)",
-							"endCaptures": {
-								"1": {
-									"name": "comment.lua"
-								}
-							},
-							"name": "keyword.operator.other.lua",
-							"patterns": [
-								{
-									"include": "source.lua"
-								}
-							]
+					"beginCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.begin.lua"
 						}
-					]
+					},
+					"end": "\\]\\1\\]",
+					"endCaptures": {
+						"0": {
+							"name": "punctuation.definition.comment.end.lua"
+						}
+					},
+					"name": "comment.block.lua"
 				},
 				{
-					"begin": "--",
-					"end": "\\n",
-					"name": "comment.line.double-dash.lua",
-					"patterns": [
-						{
-							"match": "@\\w+",
-							"name": "storage.type.class.lua"
-						}
-					]
+					"match": "(--XX)(.*$)",
+					"name": "comment.line.critical.bold.lua"
+				},
+				{
+					"match": "(--!!)(.*$)",
+					"name": "comment.line.warning.bold.lua"
+				},
+				{
+					"match": "(-->>)(.*$)",
+					"name": "comment.line.note.bold.lua"
+				},
+				{
+					"match": "(--X)(.*$)",
+					"name": "comment.line.critical.lua"
+				},
+				{
+					"match": "(--!)(.*$)",
+					"name": "comment.line.warning.lua"
+				},
+				{
+					"match": "(-->)(.*$)",
+					"name": "comment.line.note.lua"
+				},
+				{
+					"match": "(--TODO)(.*$)",
+					"name": "comment.line.tagged.todo.lua"
+				},
+				{
+					"match": "(--FIXME)(.*$)",
+					"name": "comment.line.tagged.fixme.lua"
+				},
+				{
+					"match": "(--NOTE)(.*$)",
+					"name": "comment.line.tagged.note.lua"
+				},
+				{
+					"match": "(--)(.*$)",
+					"name": "comment.line.double-dash.lua"
 				}
 			]
 		},
