@@ -1,7 +1,7 @@
 {
   "name": "luau-starlit",
-  "displayName": "luau-starlit",
-  "description": "Starlit-Studios Luau Theme for VSCode. This theme is designed to be used with the Luau programming language and is geared towards better readability for complex scripts.",
+  "displayName": "Luau-Starlit",
+  "description": "Custom theme and tweaks for the Luau programming language. Choose between simple theming or enhanced functionality for Luau scripting.",
   "publisher": "starlit-studios",
   "version": "0.0.4",
   "icon": "assets/icon128.png",
@@ -13,24 +13,47 @@
     "vscode": "^1.93.0"
   },
   "categories": [
-    "Programming Languages"
+    "Programming Languages",
+    "Themes"
   ],
   "contributes": {
-    "themes": [{
-      "label": "Luau-Starlit",
-      "uiTheme": "vs-dark",
-      "path": "./themes/Luau-Starlit-color-theme.json"
-    }],
-    "languages": [{
-      "id": "luau",
-      "aliases": ["Luau-Starlit", "luau"],
-      "extensions": [".luax",".luaux"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "luau",
-      "scopeName": "source.lua",
-      "path": "./syntaxes/luau.tmLanguage.json"
-    }]
+    "themes": [
+      {
+        "label": "Luaux-Starlit",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Luau-Starlit-color-theme.json"
+      }
+    ],
+    "languages": [
+      {
+        "id": "luaux",
+        "aliases": ["Luau-Starlit", "luaux"],
+        "extensions": [".luax", ".luaux"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "luaux",
+        "scopeName": "source.lua",
+        "path": "./syntaxes/luau.tmLanguage.json"
+      }
+    ],
+    "configurationDefaults": {
+      "[luaux]": {
+        "editor.formatOnSave": true
+      }
+    },
+    "configuration": {
+      "type": "object",
+      "title": "Luau-Starlit Configuration",
+      "properties": {
+        "luau-starlit.enableFullFunctionality": {
+          "type": "boolean",
+          "default": true,
+          "description": "Enable full functionality (grammar tweaks and advanced colors) for .luaux files. If disabled, only theming is applied."
+        }
+      }
+    }
   }
 }

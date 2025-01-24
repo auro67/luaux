@@ -1,26 +1,61 @@
+Updated README
+
+# Luau-Starlit
+
+Luau-Starlit is a custom VSCode extension by Starlit Studios, designed for developers using the Luau scripting language. This extension includes a specialized theme and optional grammar tweaks for `.luaux` files.
 
 ## Features
 
-better readability when it comes to dealing with errors versus non errors, for example, "<span style="color:red">**assert**</span>" is a bold dark red, while "<span style="color:lightyellow">**Print**</span>" is a bold Bright off-white color. little things like this make code easier to read and easy to pay attention to whats important and whats not. the keyword "local" practically looks like a comment because in my non-proffesional opinion, its completely unnessesary because i never-dont use local for variables.
+- **Custom Syntax Highlighting:**
+    - Errors like `assert` are bold dark red for visibility.
+    - Non-error keywords like `print` are bright off-white for distinction.
+    - Muted keywords such as `local` reduce visual clutter.
+- **Enhanced Comments for `.luaux` Files:**
+    ```lua
+    -- Standard comment
+    --> Note comment
+    --! Warning comment
+    --X Critical comment
+
+    --TODO To-do task
+    --FIXME Needs fixing
+    --NOTE Important note
+
+    -->> Bold note
+    --!! Bold warning
+    --XX Bold critical
+    ```
+    **Theme-Only Option**:
+        Use .lua or .luau files for theming ***only***.
+        Use .luaux or .luax for additional functionality.
+
+## Extension Settings
+
+    luau-starlit.enableFullFunctionality:
+        true (default): Full functionality for .luaux files (grammar tweaks, custom colors, enhanced comments).
+        false: Only theming is applied.
 
 ## Requirements
 
-none? not sure lol this is just used for the Luau roblox language
-
-## Extension Settings
-none, may add some in the future
+**No special requirements. Works seamlessly with .lua, .luau, and .luaux files.**
 ## Known Issues
-its common for other extensions to overwrite some things in this one, so i am working on making this extension work for .luaux files.
-<!-- ## Release Notes -->
+- Conflicts with other Lua extensions may arise when full functionality is enabled.
+- .luaux files are recommended for best results.
 
-<!-- ### 1.0.0
 
-Initial release of ...
+## Contributing
 
-### 1.0.1
+Feedback, issues, or contributions are welcome! Visit the GitHub Repository to report bugs or submit feature requests.
 
-Fixed issue #.
 
-### 1.1.0
+---
 
-Added features X, Y, and Z. -->
+### Key Benefits
+1. **Flexibility for Users:**
+   Users can choose between lightweight theming or advanced tweaks.
+2. **Better User Experience:**
+   `.lua` and `.luau` remain compatible without introducing unexpected changes, while `.luaux` allows experimentation.
+3. **Customizability:**
+   Future updates can extend the toggle to include other features like formatting rules or snippet behavior.
+
+---

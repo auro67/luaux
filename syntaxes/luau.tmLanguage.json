@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Luau-Starlit",
+	"name": "Luaux-Starlit",
 	"patterns": [
 		{
 			"begin": "\\b(?:(local)\\s*)?(function)\\s*([a-zA-Z_]\\w*(?:[.:]([a-zA-Z_]\\w*))*)?\\s*(\\<[\\w\\s\\,]*\\>)?\\s*\\(",
