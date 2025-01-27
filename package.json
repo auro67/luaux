@@ -24,7 +24,7 @@
         "path": "./themes/Luaux-Starlit-color-theme.json"
       },
       {
-        "label": "Luaux-Starlit",
+        "label": "Luaux-Starlit-Aurora",
         "uiTheme": "vs-dark",
         "path": "./themes/Luaux-Starlit-Aurora-color-theme.json"
       }
