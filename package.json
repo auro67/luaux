@@ -3,7 +3,7 @@
   "displayName": "Luaux-Starlit",
   "description": "Custom theme and tweaks for the Luau programming language. Choose between simple theming or enhanced functionality for Luau scripting.",
   "publisher": "starlit-studios",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "icon": "assets/icon128.png",
   "repository": {
     "type": "git",
